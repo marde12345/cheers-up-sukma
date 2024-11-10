@@ -1,32 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Be My Valentine</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <div id="valentineQuestion"><b>Next Saturday are u free??</b></div>
-    <button class="answerButton" onclick="location.href='thankyou.html'">
-      Yes
-    </button>
-    <button class="answerButton" id="noButton">I no no wanna o(╥﹏╥)o</button>
-    <br />
-    <img src="cat.gif" alt="cat asking question" class="responsive" />
 
-    <script>
-      document
-        .getElementById("noButton")
-        .addEventListener("click", function () {
-          var yesButton = document.querySelector(
-            'button[onclick*="thankyou.html"]'
-          );
-          var currentFontSize = parseInt(
-            window.getComputedStyle(yesButton).fontSize
-          );
-          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
-        });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi Kids!</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <audio id="backSong" controls autoplay loop>
+    <source src="resources/sampai-jadi-debu.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="flowerEntrance" class="flower">
+  </div>
+  <div id="mainContainer" class="fade-in; visible">
+    <img id="mainContent"  alt="Ini gambar" class="responsive;" />
+    <div id="mainDate"></div>
+    <div id="mainText" ></div>
+    <button class="answerButton" id="yesButton">Sudaaah...</button>
+  </div>
+  <br />
+
+  <script>
+    var isPlayingSong = false;
+    var idxPage = 0;
+    const pageContents = [
+      {
+        mainText: "Hi Kids~,<br>Ini cerita perjalanan percintaan mama dan ayah, dari pov ayah. Tolong mulai dulu lagunya ya untuk menghayutkan suasana. Btw, ini lagu kesukaan mama lho!",
+        nextButton: "Sudaaah....",
+        mainContext: "",      
+        mainDate: "",
+        pageType: ""          
+      },
+      {
+        mainText: "Berawal dari reply mama kamu, waktu itu ayah masih belum terpikir untuk terlalu terbawa perasaan. Pada saat itu, ayah masih mengejar karir dan memperbaiki segala yang bisa ayah perbaiki. Sedangkan mama, mungkin juga masih struggle dengan kehidupan sehari-hari.",
+        mainDate: "<b>30 Okt 2020</b>",
+        nextButton: ">",
+        mainContext: "resources/first-text.jpg",      
+        pageType: ""          
+      },
+      {
+        mainText: "Ayah waktu itu baru menyelesaikan kuliah. Pada waktu itu, pandemi covid menyerang dan ayah harus wisuda online. Sulit waktu itu untuk cari kerja pada saat pandemi. Ayah pernah daftar polisi, tapi gagal wkwkwk. Qadarullah, setelah ikhlas dengan polisi, ayah dapat perkejaan di Tokopedia sebagai remote software engineer dengan gaji yang luar biasa besar. Btw, itu yang di sebelah ayah adalah nenek kamu, ibu dari ayah. Kakek dari ayah masih gak tau kemana, tapi gak papa, ayah selalu berusaha ada buat kamu kok :)",
+        mainDate: "<b>12 Des 2020</b>",
+        nextButton: "Next 🤣",
+        mainContext: "resources/wisuda-fasma.png",      
+        pageType: ""          
+      },
+      {
+        mainText: "In other universe, luar biasa, hebat banget mama kamu malah dapet juara 1 dalam Lomba Karya Tulis Ilmiah! Gila salut keren banget, kamu bisa belajar dari mama kamu yang pinter banget sih ya! Semoga pinternya nurun ke kamu.",
+        mainDate: "<b>18 Des 2020</b>",
+        nextButton: "Next 😍",
+        mainContext: "resources/winner-sukma.jpeg",      
+        pageType: ""          
+      },
+      {
+        mainText: "Gak kerasa, perjalanan kuliah mama kamu selesai juga. Maafin ayah ya belum sempat foto wisuda bareng. Waktu itu ayah juga masih bergelut dengan recovery kehidupan ayah. Kalau denger cerita dari mama, mama waktu ini jadi wanita paling bahagia sedunia. Mama juga masih bergelut dengan kehidupannya sendiri. Tapiii, ayah sempet lirik-lirik mama dari youtube juga. Mama kamu cantiiikkk banget deh, mirip kaya kamu cantiknya.",
+        mainDate: "<b>25 Sept 2022</b>",
+        nextButton: "Next 😍😍😍",
+        mainContext: "resources/wisuda-sukma.png",      
+        pageType: ""          
+      },
+      {
+        mainText: "Ini momen pertama kali ayah serius ketemu mama kamu, kami bertemu di stasiun Tugu. Iya nak Tugu, mungkin itu nama kamu sekarang. Disini, yang paling ayah inget adalah momen muka mama kamu yang memerah sejadi-jadinya. Disini, aslinya ayah lagi test buat S2 di UGM ngikut mama hehehe. Sekalian besoknya pamit mau naik ke gunung Rinjani wuhehehehe.",
+        mainDate: "<b>22 Mei 2024</b>",
+        nextButton: "So sweeett",
+        mainContext: "resources/first-time-meet.jpeg",      
+        pageType: ""          
+      },
+      {
+        mainText: "Ketika ayah pulang, mama kamu ngasih kue nastar... Itu enak banget sumpah, ayah belum makan dari pagi, langsung ayah habisin sebelum flight ke Jakarta. Pas itu, pesawat ayah flight malam, bagus banget pemandangannya.",
+        mainDate: "<b>22 Mei 2024</b>",
+        nextButton: "Yee naik pesawat",
+        mainContext: "resources/2024-mei-22-flight-to-jkt.jpeg",      
+        pageType: ""          
+      },
+      {
+        mainText: "Setelah pamit, landing di Lombok, ayah mampir ke Desa Sade. Di sana, ayah foto bareng mama virtual di pohon cinta. Katanya bisa berjodoh kalau foto di sini.",
+        mainDate: "<b>23 Mei 2024</b>",
+        nextButton: "Iii sa ae ayah",
+        mainContext: "resources/2024-mei-23-desa-sade.jpeg",      
+        pageType: ""          
+      },
+      {
+        mainText: "Tibalah di puncak 3726 mdpl. Mama kamu berhasil sampai sini lho! Keren gak? Keren banget lah. Puncak kebanggaan seorang pendaki ya bisa sampai di atas Letter E ini.",
+        mainDate: "<b>25 Mei 2024</b>",
+        nextButton: "Mama hebaat banget",
+        mainContext: "resources/2024-mei-25-summit.jpeg",      
+        pageType: ""          
+      },
+      {
+        mainText: "Besoknya, ayah turun ke Sagara Anak. Mama kamu juga berhasil ke Sagara Anak lho. Suasananya kaya di film My Heart tau, dingin, kabut, danaunya.",
+        mainDate: "<b>25 Mei 2024</b>",
+        nextButton: "Iihh keren ada bulannya",
+        mainContext: "resources/2024-mei-26-sagara-anak.jpeg",      
+        pageType: ""          
+      },
+    ];
+
+    document.getElementById("backSong").addEventListener("playing", function () {
+      isPlayingSong = true;
+    });
+
+    function onClickYesButton(params) {
+      if (!isPlayingSong) {
+        alert("Tolong mulai lagu dulu");
+        return;
+      }
+
+      idxPage += 1;
+      if (idxPage >= pageContents.length) {
+        // End of the game
+        alert("Selamat, kamu berhasil menyelesaikan semua halaman. Buat Kids~, semangat terus menjalani hidup ya, kami pasti mendampingimu selalu. Buat Sukma Dyah Aini, kamu pantas kok untuk mendapatkan cinta sebesar dunia dan seisinya 💕.");
+        return;
+      }
+
+      document.getElementById("flowerEntrance").hidden = true;
+
+      document.getElementById("mainContent").hidden = false;
+      document.getElementById("mainContainer").classList.remove("visible");
+      
+      setTimeout(()=>{
+        document.getElementById("mainContainer").classList.add("visible");
+        
+        document.getElementById("mainContent").src = pageContents[idxPage].mainContext;
+        document.getElementById("mainText").innerHTML = pageContents[idxPage].mainText;
+        document.getElementById("yesButton").textContent = pageContents[idxPage].nextButton;
+        document.getElementById("mainDate").innerHTML = pageContents[idxPage].mainDate;
+      },100)
+    }
+
+    function onLoadPage() {
+      mainTextDiv = document.getElementById("mainText");
+      yesButtonDiv = document.getElementById("yesButton");
+      mainContentDiv = document.getElementById("mainContent");
+      mainContainerDiv = document.getElementById("mainContainer");
+      
+      mainTextDiv.innerHTML = pageContents[idxPage].mainText;
+      yesButtonDiv.textContent = pageContents[idxPage].nextButton;
+      mainContentDiv.hidden = true;
+      mainContainerDiv.classList.add("visible");
+    }
+
+    onLoadPage();
+    document.getElementById("yesButton").onclick = onClickYesButton;
+
+
+  </script>
+</body>
+
 </html>
