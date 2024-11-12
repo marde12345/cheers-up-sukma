@@ -7,9 +7,8 @@ body {
 }
 
 img {
-  height: 400px;
-  width: auto;
-  padding: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 #valentineQuestion {
@@ -39,12 +38,43 @@ img {
   box-shadow: 1px 1px 2px #ffe3e1;
 }
 
+#imageContainer {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 70%; /* Full width of the container */
+  height: 70%; /* Adjust as needed */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#mainContent {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 /* CSS for fade-in animation */
 .fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .fade-in.visible {
   opacity: 1;
+}
+
+/* Slide animation */
+.fade-slide {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-slide.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
