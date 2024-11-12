@@ -38,13 +38,21 @@ img {
   box-shadow: 1px 1px 2px #ffe3e1;
 }
 
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust as needed */
+  box-sizing: border-box;
+}
+
 #imageContainer {
-  place-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%; /* Full width of the container */
-  height: 70%; /* Adjust as needed */
+  width: 70%; /* Adjust width as needed */
+  height: 70%; /* Adjust height as needed */
   overflow: hidden;
   margin-bottom: 10px;
 }
