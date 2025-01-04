@@ -454,6 +454,22 @@
       },
     ];
 
+    function changeImageAndWaitForLoad(imgElement, newSrc, callback) {
+      // Set up an event listener to detect when the image has loaded
+      imgElement.onload = function () {
+        console.log("Image loaded successfully!");
+        // Execute the callback if provided
+        if (callback) {
+          callback();
+        }
+        // Remove the onload event to avoid potential multiple triggers
+        imgElement.onload = null;
+      };
+
+      // Update the image source (this starts the loading process)
+      imgElement.src = newSrc;
+    }
+
     function onClickYesButton(params) {
       if (!isPlayingSong) {
         alert("Tolong mulai lagu dulu");
@@ -477,12 +493,20 @@
       document.getElementById("mainContent").hidden = false;
 
       setTimeout(() => {
-        document.getElementById("mainContent").src = pageContents[idxPage].mainContext;
-        document.getElementById("mainText").innerHTML = pageContents[idxPage].mainText;
-        document.getElementById("yesButton").textContent = pageContents[idxPage].nextButton;
-        document.getElementById("mainDate").innerHTML = pageContents[idxPage].mainDate;
-
-        document.getElementById("mainContainer").classList.add("visible");
+        const mainContentImg = document.getElementById("mainContent");
+        
+        changeImageAndWaitForLoad(
+          mainContentImg,
+          pageContents[idxPage].mainContext,
+          function () {
+            // Perform additional actions here
+            document.getElementById("mainText").innerHTML = pageContents[idxPage].mainText;
+            document.getElementById("yesButton").textContent = pageContents[idxPage].nextButton;
+            document.getElementById("mainDate").innerHTML = pageContents[idxPage].mainDate;
+    
+            document.getElementById("mainContainer").classList.add("visible");
+          }
+        );
       }, 2000)
     }
 
