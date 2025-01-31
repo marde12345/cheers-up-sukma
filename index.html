@@ -22,7 +22,7 @@
     </div>
     <div id="mainDate"></div>
     <div id="mainText"></div>
-    <button class="answerButton" id="yesButton"></button>
+    <button class="answerButton" id="yesButton" ></button>
   </div>
   <br />
 
@@ -33,397 +33,397 @@
 
     const pageContents = [
       {
-        mainText: "Hallo untuk kamu yang dapat mendapatkan diary ini<br><br>Minta tolong mulai dulu lagunya ya, untuk menghayutkan suasana",
+        mainText: "<b>Selamat datang kepada manusya yang mendapatkan diary ini</b><br><br>Minta tolong mulai dulu lagunya ya, untuk menghayutkan suasana",
         nextButton: "Next",
         mainContext: "",
         mainDate: "",
         pageType: ""
       },
       {
-        mainText: "Jadi, ini adalah hadiah untuk mama kamu. Hadiah ulang tahun yang ke 24, hadiah ini menceritakan perjalanan cinta mama dan ayah, dari sudut pandang ayah. Bisa dibilang ini diary ayah untuk mama dan kamu. Bila diary ini sampai ke kamu, maka selamat, ayah percaya dan berani bercerita kepada kalian. Entah itu dalam keadaan yang baik-baik saja atau tidak baik-baik saja. Btw, ini lagu kesukaan mama lho!",
+        mainText: "Jadi, ini adalah hadiah untuk Sukma Dyah Aini. Hadiah ulang tahun yang ke 24, hadiah ini menceritakan perjalanan mendapatkan cinta cah ayu, dari sudut pandang mas. Bisa dibilang ini diary yang mas buat untuk cah ayu. Bila diary ini sampai ke kamu, maka selamat, mas percaya dan sudah berani bercerita kepada cah ayu. Entah itu dalam keadaan yang baik-baik saja atau tidak baik-baik saja. Btw, ini lagu kesukaan cah ayu lho!",
         mainDate: "<b>2 Februari 2025</b>",
-        nextButton: "Hoo oke",
+        nextButton: "Next",
         mainContext: "resources/img/sampai-jadi-debu.jpg",
         pageType: ""
       },
       {
-        mainText: "Berawal dari reply mama kamu, waktu itu ayah masih belum terpikir untuk terlalu terbawa perasaan. Pada saat itu, ayah masih mengejar karir dan memperbaiki segala yang bisa ayah perbaiki. Sedangkan mama, mungkin masih struggle dengan kehidupan sehari-hari.",
+        mainText: "<i>Dimulai dari PIMNAS ke-33, awal pertemuan mama dan ayah. Pada saat itu, mama dan ayah masih belum mengenal satu sama lain. Ayah dulu cuma sebatas mahasiswa akhir semester yang kepengen lulus tapi ditahan oleh universitas karena harus mendampingi sebuah tim. Banyak hal yang ngebuat ayah bete seperti covid, wisuda mundur, jadi tahanan universitas dan iri melihat teman-teman ayah yang sudah mulai lempar info loker. Suatu ketika ayah lagi ngadem di dekat ac dan tiba-tiba ada perempuan pakai masker, berkacamata, dan kulitnya sawo matang ikut ngadem. Sekilas, ayah pernah lihat perempuan ini di laboratorium ayah. Seinget ayah, perempuan itu mau minta tolong untuk dibuatkan aplikasi mobile yang kebetulan lab ayah juga spesialis developer mobile apps</i> - Fasma",
+        mainDate: "<b>29 November 2020</b>",
+        nextButton: "Next",
+        mainContext: "resources/img_unclaimed/favicon-white.png",
+        pageType: ""
+      },
+      {
+        mainText: "<i>Entah sejak kapan, ayah dan mama following instagram. Yang pasti cerita ayah dimulai dari reply mama kamu, waktu itu ayah masih belum terpikir untuk terlalu terbawa perasaan. Pada saat itu, ayah masih mengejar karir dan memperbaiki segala yang bisa ayah perbaiki. Sedangkan mama, mungkin masih struggle dengan kehidupan sehari-hari</i> - Fasma",
         mainDate: "<b>30 Oktober 2020</b>",
         nextButton: "Next",
         mainContext: "resources/img/first-response.jpeg",
         pageType: ""
       },
       {
-        mainText: "Ayah waktu itu baru menyelesaikan kuliah. Saat itu, pandemi covid menyerang dan ayah harus wisuda online. Waktu itu sulit untuk cari kerja. Ayah pernah daftar polisi 2x, tapi gagal wkwkwk. Qadarullah, setelah ikhlas dengan polisi, ayah dapat perkejaan di startup sebagai remote software engineer dengan gaji yang alhamdulillah luar biasa besar. Btw, itu yang di sebelah ayah adalah nenek kamu, ibu dari ayah. Nenek punya sejuta cerita yang bisa ngebuat kamu tegar dan menangis, nenek kamu kuat banget lho! Kalau kakek dari ayah masih gak tau kemana, tapi gak papa, ayah selalu berusaha ada buat kamu kok :)",
+        mainText: "<i>Ayah waktu itu baru menyelesaikan kuliah. Saat itu, covid dan ayah harus wisuda online. Waktu itu sulit untuk cari kerja. Ayah pernah daftar polisi 2x, tapi gagal wkwkwk. Qadarullah, setelah ikhlas dengan polisi, ayah dapat perkejaan di startup sebagai remote software engineer dengan gaji yang alhamdulillah luar biasa besar. Btw, itu yang di sebelah ayah adalah nenek kamu, ibu dari ayah. Nenek punya sejuta cerita yang bisa ngebuat kamu tegar dan menangis, nenek kamu kuat banget lho! Kalau kakek dari ayah masih gak tau kemana, tapi gak papa, ayah selalu berusaha ada buat kamu kok :)</i> - Fasma",
         mainDate: "<b>12 Desember 2020</b>",
         nextButton: "Next 🤣",
         mainContext: "resources/img/wisuda-fasma.jpeg",
         pageType: ""
       },
       {
-        mainText: "In another universe, luar biasa, hebat banget mama kamu malah dapet juara 1 dalam Lomba Karya Tulis Ilmiah! Gila salut keren banget, kamu bisa belajar dari mama kamu yang pinter banget sih ya! Semoga pinternya nurun ke kamu. Keren banget kan mama kamuu, mama kamu itu pinter banget!!!...",
+        mainText: "<i>In another universe, luar biasa, hebat banget mama kamu malah dapet juara 1 dalam Lomba Karya Tulis Ilmiah! Gila salut keren banget, kamu bisa belajar dari mama kamu yang pinter banget sih ya! Bahkan bukan cuman lomba ini aja, mama kamu udah biasa dapet juara di lomba lainnya. Semoga pinternya nurun ke kamu. Keren banget kan mama kamuu, mama kamu itu pinter banget!!!...</i> - Fasma",
         mainDate: "<b>18 Desember 2020</b>",
         nextButton: "Next 😍",
         mainContext: "resources/img/kti-sukma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Gak kerasa, perjalanan kuliah mama kamu selesai juga. Maafin ayah ya belum sempat foto wisuda bareng. Waktu itu ayah juga masih bergelut dengan recovery kehidupan ayah. Tapiii tenang, ayah sempet lirik-lirik mama dari youtube juga. Mama kamu cantiiikkk banget deh, mirip kaya kamu cantiknya. Ayah seneng banget ketika nama mama kamu dipanggil dengan kalimat Lulus Dengan Predikat Cumlaude. Kalau denger cerita dari mama kamu, mama waktu itu jadi wanita paaaalinnngg bahagia sedunia.",
+        mainText: "<i>Gak kerasa, perjalanan kuliah mama kamu selesai juga. Maafin ayah ya belum sempat foto wisuda bareng. Waktu itu ayah juga masih bergelut dengan recovery kehidupan ayah. Tapiii tenang, ayah sempet lirik-lirik mama dari youtube juga. Mama kamu cantiiikkk banget deh, mirip kaya kamu cantiknya. Ayah seneng banget ketika nama mama kamu dipanggil dengan kalimat Lulus Dengan Predikat Cumlaude. Kalau denger cerita dari mama kamu, mama waktu itu jadi wanita paaaalinnngg bahagia sedunia</i> - Fasma",
         mainDate: "<b>25 September 2022</b>",
         nextButton: "Next 😍😍😍",
         mainContext: "resources/img/wisuda-sukma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Ayah juga nyimpen beberapa foto wisuda mama lho. Bahkan sampai ayah favorit di galery. Di masa prime time itu, mama cantik banget ya. MasyaAllah...",
+        mainText: "<i>Ayah juga nyimpen beberapa foto wisuda mama lho. Bahkan sampai ayah favorit di galery. Di masa prime time itu, mama cantik banget ya. Beda banget waktu pertama ayah ketemu mama. Cantik parah! MasyaAllah...</i> - Fasma",
         mainDate: "<b>25 September 2022</b>",
         mainContext: "resources/img/wisuda-sukma-3.jpeg",
         nextButton: "Next 😍😍😍",
       },
       {
-        mainText: "Mama main chaiya-chaiya ala india. Malu-malu kucing...",
+        mainText: "<i>Mama sembunyi di balik tembok. Malu-malu kucing...</i> - Fasma",
         mainDate: "<b>25 September 2022</b>",
         mainContext: "resources/img/wisuda-sukma-2.jpeg",
         nextButton: "Next 😍😍😍",
       },
       {
-        mainText: "Mama cantik ya",
+        mainText: "<i>Mama cantik ya</i> - Fasma",
         mainDate: "<b>25 September 2022</b>",
         mainContext: "resources/img/wisuda-sukma-1.jpeg",
         nextButton: "Next 😍😍😍",
       },
       {
-        mainText: "Waktu itu, masyarakat sedang dihadapkan dengan kegaduhan pemilu 2024. Banyak issues yang tidak benar mengenai sistem sirekap yang bisa dimanipulasi. Dari situ, ayah yang baru recovery dari off sosial media, mulai membuat konten scrapping data pemilu untuk mendeteksi anomali suara pada beberapa daerah. Gak disangka, mama kamu mereply konten ayah tersebut",
+        mainText: "<i>Next, waktu itu, masyarakat sedang dihadapkan dengan kegaduhan pemilu 2024. Banyak issues yang tidak benar mengenai sistem sirekap yang bisa dimanipulasi. Dari situ, ayah yang baru recovery dari off sosial media, mulai membuat konten scrapping data pemilu untuk mendeteksi anomali suara pada beberapa daerah. Gak disangka, mama kamu reply konten ayah tersebut</i> - Fasma",
         mainDate: "<b>Februari 2024</b>",
         nextButton: "Wuih keren",
         mainContext: "resources/img/konten.jpeg",
         pageType: ""
       },
       {
-        mainText: "Dari situ, ayah yang baru selesai recovery dan siap untuk serius membuka hati kepada mama kamu. Ayah siap menerima apapun kondisi mama kamu pada saat itu. Ingat ya nak, keluarga itu dibentuk, tidak ada kata keluarga sempurna. Bahkan masing masing individu itu tidak sempurna, jadi, bentuklah sebuah hubungan itu sendiri",
+        mainText: "<i>Dari situ, ayah yang baru selesai recovery dan siap untuk serius membuka hati kepada mama kamu. Ayah siap menerima apapun kondisi mama kamu pada saat itu. Ingat ya nak, keluarga itu dibentuk, tidak ada kata keluarga sempurna. Bahkan masing- masing individu itu tidak sempurna, tapi masing-masing juga punya perannya sendiri. Jadi, bentuklah sebuah hubungan itu sendiri</i> - Fasma",
         mainDate: "<b>Februari 2024</b>",
         nextButton: "Confess??",
         mainContext: "resources/img/heart.png",
         pageType: ""
       },
       {
-        mainText: "Ini adalah momen pertama kali ayah serius ketemu mama kamu, kami bertemu di stasiun Tugu. Iya nak Tugu, mungkin itu nama kamu sekarang. Disini, yang paling ayah inget adalah momen muka mama kamu yang memerah sejadi-jadinya. Disini, aslinya ayah lagi test buat S2 di UGM ngikut mama hehehe. Sekalian besoknya pamit mau naik ke gunung Rinjani wuhehehehe. Ketika ayah pulang, mama kamu ngasih kue nastar... Itu enak banget sumpah, ayah belum makan dari pagi, langsung ayah habisin sebelum flight ke Jakarta.",
+        mainText: "<i>Ini adalah momen pertama kali ayah serius ketemu mama kamu, kami bertemu di stasiun Tugu. Iya nak Tugu, mungkin itu nama kamu sekarang. Disini, yang paling ayah inget adalah momen muka mama kamu yang memerah sejadi-jadinya. Disini, aslinya ayah lagi test buat S2 di UGM ngikut mama hehehe. Sekalian besoknya pamit mau naik ke gunung Rinjani wuhehehehe. Ketika ayah pulang, mama kamu ngasih kue nastar... Itu enak banget sumpah, ayah belum makan dari pagi, langsung ayah habisin sebelum flight ke Jakarta</i> - Fasma",
         mainDate: "<b>22 Mei 2024</b>",
         nextButton: "So sweeett",
         mainContext: "resources/img/first-meet.jpeg",
         pageType: ""
       },
       {
-        mainText: "Setelah pamit, landing di Lombok, ayah mampir ke Desa Sade. Di sana, ayah foto bareng mama virtual di pohon cinta. Katanya bisa berjodoh kalau foto di sini.",
+        mainText: "<i>Setelah pamit, landing di Lombok, ayah mampir ke Desa Sade. Di sana, ayah foto bareng mama virtual di pohon cinta. Katanya bisa berjodoh kalau foto di sini</i> - Fasma",
         mainDate: "<b>23 Mei 2024</b>",
         nextButton: "Iii sa ae ayah",
         mainContext: "resources/img/rinjani-sukma-0.jpeg",
         pageType: ""
       },
       {
-        mainText: "Tibalah di puncak 3726 mdpl. Mama kamu berhasil sampai sini lho! Keren gak? Keren banget lah. Puncak kebanggaan seorang pendaki ya bisa sampai di atas Letter E ini.",
+        mainText: "<i>Tibalah di puncak 3726 mdpl. Mama kamu berhasil sampai sini lho! Keren gak? Keren banget lah. Puncak kebanggaan seorang pendaki ya bisa sampai di atas Letter E ini</i> - Fasma",
         mainDate: "<b>25 Mei 2024</b>",
         nextButton: "Mama hebaat banget",
         mainContext: "resources/img/rinjani-sukma-1.jpeg",
         pageType: ""
       },
       {
-        mainText: "Besoknya, ayah turun ke Sagara Anak. Mama kamu juga berhasil ke Sagara Anak lho. Suasananya kaya di film My Heart tau, dingin, kabut, danaunya.",
+        mainText: "<i>Besoknya, ayah turun ke Sagara Anak. Mama kamu juga berhasil ke Sagara Anak lho. Suasananya kaya di film My Heart tau, dingin, kabut, danaunya</i> - Fasma",
         mainDate: "<b>25 Mei 2024</b>",
         nextButton: "Iihh keren ada bulannya",
         mainContext: "resources/img/rinjani-sukma-2.jpeg",
         pageType: ""
       },
       {
-        mainText: "Setelah pertemuan singkat dan naik Rinjani, ayah coba ajak mama kamu untuk first date. Ayah bodoh banget waktu itu, banyak hal yang keteteran. Intinya ayah ngebuatin itenarary ke es campur, nonton inside out 2, photobox, donor darah, dan makan malam. Sebelum berangkat dari Madiun untuk menemui sang pujaan hati, ayah sempetin untuk mencetak hasil foto kaktus mama kamu yang dikasih kuping kucing. Lucuuu banget ngelihatnya...",
+        mainText: "<i>Setelah pertemuan singkat dan naik Rinjani, ayah coba ajak mama kamu untuk first date. Ayah bodoh banget waktu itu, banyak hal yang keteteran. Intinya ayah ngebuatin itenarary ke es campur, nonton inside out 2, photobox, donor darah, dan makan malam. Sebelum berangkat dari Madiun untuk menemui mama, ayah sempetin untuk mencetak hasil foto kaktus mama kamu yang dikasih kuping kucing. Lucuuu banget ngelihatnya...</i> - Fasma",
         mainDate: "<b>17 Juni 2024</b>",
         nextButton: "Lucuuu",
         mainContext: "resources/img/cat-cactus.jpeg",
         pageType: ""
       },
       {
-        mainText: "Ini hasil photobox bareng mama kamu. Mama kamu cantik banget ya. Ayah sampai mati gaya bisa sedekat itu sama perempuan. Ini momen ayah pertama kali, masuk ke photobox berdua dan duduk sedekat itu dengan perempuan. Iya literelli ayah gak pernah nempel sama perempuan manapun",
+        mainText: "<i>Ini hasil photobox bareng mama kamu. Mama kamu cantik banget ya. Ayah sampai mati gaya bisa sedekat itu sama perempuan. Ini momen ayah pertama kali, masuk ke photobox berdua dan duduk sedekat itu dengan perempuan. Iya literelli ayah gak pernah nempel sama perempuan manapun</i> - Fasma",
         mainDate: "<b>18 Juni 2024</b>",
         nextButton: "Aaaaa so kyut",
         mainContext: "resources/img/first-date-photo-box.jpeg",
         pageType: ""
       },
       {
-        mainText: "Kalau ini, makan malam bareng setelah movie date. Karena ayah dan mama suka mencoba coba, maka ayah pesen mie dan nasi goreng untuk dicobain semua. Nah ayah inisiatif untuk split plate bareng mama kamu. Separo ayah pisahin ke piring mama dan separo pisahin ke piring ayah. Dan jadilah menu ikonik ini. Kalau kata mama, ini kaya magelangan atau nasi mawut. Oiya, dari sini ayah tau kalau mama kamu gak suka cabe potong wkwkwk. Pokoknya ini pertama kali ayah makan sepiring dibagi sama mama kamu. Lucu banget ya first date ayah dan mama",
+        mainText: "<i>Kalau ini, makan malam bareng setelah movie date. Karena ayah dan mama suka mencoba coba, maka ayah pesen mie dan nasi goreng untuk dicobain semua. Nah ayah inisiatif untuk split plate bareng mama kamu. Separo ayah pisahin ke piring mama dan separo pisahin ke piring ayah. Dan jadilah menu ikonik ini. Kalau kata mama, ini kaya magelangan atau nasi mawut. Oiya, dari sini ayah tau kalau mama kamu gak suka cabe potong wkwkwk. Pokoknya ini pertama kali ayah makan sepiring dibagi sama mama kamu. Lucu banget ya first date ayah dan mama</i> - Fasma",
         mainDate: "<b>18 Juni 2024</b>",
         nextButton: "Cieee",
         mainContext: "resources/img/first-date-makan-malam.jpeg",
         pageType: ""
       },
       {
-        mainText: "Setelah first date ayah dan mama, ayah mau nyemangati mama yang mau UAS. Semoga mama bisa melewati rintangannya sendiri. Oiya, disini ayah juga sempet modus pengen upload story dengan mama. Tapi mama menolak, entah apa alasannya tapi ayah menghargai keputusan tersebut. Mungkin nanti ada waktunya mama yang bakal upload story bareng ayah",
+        mainText: "<i>Setelah first date ayah dan mama, ayah mau nyemangati mama yang mau UAS. Semoga mama bisa melewati rintangannya sendiri. Oiya, disini ayah juga sempet modus pengen upload story dengan mama. Tapi mama menolak, entah apa alasannya tapi ayah menghargai keputusan tersebut. Mungkin nanti ada waktunya mama yang bakal upload story bareng ayah</i> - Fasma",
         mainDate: "<b>19 Juni 2024</b>",
         mainContext: "resources/img/email-uas.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "Tak selang berapa hari, mama kirim email ke ayah. Long story short, intinya mama pengen mengakhiri hubungan dengan ayah. Like what? what happens? why? Ayah bukan tipikal yang 'bila ada luka, maka potong tangannya'. That's not how the world's works! Disini ayah coba tegarin mama dan gak mau semudah itu mengakhiri sebuah hubungan, ya walau memang mama belum ngasih kepastian hubungan kita. Ayah coba nguatin mama, ngasih banyak afirmasi, coba ngerayu mama. Ayah memang kurang peka, tapi ayah tau ini ada sesuatu yang tidak beres",
+        mainText: "<i>Tak selang berapa hari, mama kirim email ke ayah. Long story short, intinya mama pengen mengakhiri hubungan dengan ayah. Like what? what happens? why? Ayah bukan tipikal yang 'bila ada luka, maka potong tangannya'. That's not how the world's works! Disini ayah coba tenangin mama dan gak mau semudah itu mengakhiri sebuah hubungan, ya walau memang mama belum ngasih kepastian hubungan kami. Ayah coba nguatin mama, ngasih banyak afirmasi, coba ngerayu mama. Ayah memang kurang peka, tapi ayah tau ini ada sesuatu yang tidak beres</i> - Fasma",
         mainDate: "<b>22 Juni 2024</b>",
         mainContext: "resources/img/email-ovt.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "Dalam rangka mencoba mengembalikan semangat mama dan kebetulan ayah suka menuangkan segala pikiran ayah ke tulisan, ayah coba recap first date ke dalam email. Gak disangka, mama ngebales email ayah. wkwkwkwkwk. Justru ini kesempatan ayah untuk semakin bisa memasuki, memahami, dan mendekati mama kamu. So sweet banget ya, kaya jaman dulu ada surat menyurat, sekarang ada email mengemail wkwkwk",
+        mainText: "<i>Dalam rangka mencoba mengembalikan semangat mama dan kebetulan ayah suka menuangkan segala pikiran ayah ke tulisan, ayah coba recap first date ke dalam email. Gak disangka, mama ngebales email ayah. wkwkwkwkwk. Justru ini kesempatan ayah untuk semakin bisa memasuki, memahami, dan mendekati mama kamu. So sweet banget ya, kaya jaman dulu ada surat menyurat, sekarang ada email mengemail wkwkwk</i> - Fasma",
         mainDate: "<b>23 Juni 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/email-first-date.jpeg",
         pageType: ""
       },
       {
-        mainText: "Suatu ketika, mama kamu tiba tiba berangkat ke Jakarta. Waktu itu, ayah ada jadwal freedive di Kep. 1000. Mama kamu kebiasaan gitu masalahnya, suka dadakan dan gak ngasih kabar. Alasannya takut merepoti, padahal ayah kan udah terang terangan pengen ngedeketin mama kamu. Itu hal wajar dan bahkan bisa buat pasangan seneng karena direpoti. Yasudah, setelah sekian perdebatan, akhirnya ayah pulang agak awal untuk kembali ke Jkt. Setelah sampai Jkt, ayah langsung menuju ke stasiun Pasarsenen untuk menemui mama. Untungnya mama kamu masih mau nunggu ayah di peron, padahal keretanya udah ready lho wkwkwk. Makasih ya sayangku udah ditungguin. Disini mama kelihatan capet banget, jutek parah. Karena ayah juga capek setelah perjalanan laut, yasudah ayah coba untuk menghibur dan membahas ringan sampai mama pengen masuk gerbong.",
+        mainText: "<i>Suatu ketika, mama kamu tiba tiba berangkat ke Jakarta. Waktu itu, ayah ada jadwal freedive di Kep. 1000. Mama kamu kebiasaan gitu masalahnya, suka dadakan dan gak ngasih kabar. Alasannya takut merepoti, padahal ayah kan udah terang terangan pengen ngedeketin mama kamu. Itu hal wajar dan bahkan bisa buat pasangan seneng karena direpoti. Yasudah, setelah sekian perdebatan, akhirnya ayah pulang agak awal untuk kembali ke Jkt. Setelah sampai Jkt, ayah langsung menuju ke stasiun Pasarsenen untuk menemui mama. Untungnya mama kamu masih mau nunggu ayah di peron, padahal keretanya udah ready lho wkwkwk. Makasih ya sayangku udah ditungguin. Disini mama kelihatan capek banget, jutek parah. Karena ayah juga capek setelah perjalanan laut, yasudah ayah coba untuk menghibur dan membahas ringan sampai mama pengen masuk gerbong</i> - Fasma",
         mainDate: "<b>28 Juli 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/jakarta-sukma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Suatu malam minggu, ayah kangen nih ceritanya sama mama kamu. Ayah coba invite mama buat main game gambar gambar. Mama kamu jago banget gambarnya woi, emang aslinya mama kamu itu jiwa seniman. Ayah dan mama hebat lho, nebak jawaban dengan cepat dan tepat. Kek kami berdua itu resonate dan sepemikiran. Cocok banget deh pokoknya.",
+        mainText: "<i>Suatu malam minggu, ayah kangen nih ceritanya sama mama kamu. Ayah coba invite mama buat main game gambar gambar. Mama kamu jago banget gambarnya woi, emang aslinya mama kamu itu jiwa seniman. Ayah dan mama hebat lho, nebak jawaban dengan cepat dan tepat. Kek kami berdua itu resonate dan sepemikiran. Cocok banget deh pokoknya</i> - Fasma",
         mainDate: "<b>3 Agustus 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/online-date.jpeg",
         pageType: ""
       },
       {
-        mainText: "Suatu hari, ketika mama kamu pulang ke Bondowoso. Mama kamu diajak untuk mengikuti acara keluarga. Disitu, mama upload foto sambil pegang lilin. Ayah terpesona... Mama kamu... cantik...",
+        mainText: "<i>Suatu hari, ketika mama kamu pulang ke Bondowoso. Mama kamu diajak untuk mengikuti acara keluarga. Disitu, mama upload foto sambil pegang lilin. Ayah terpesona... Mama kamu... cantik...</i> - Fasma",
         mainDate: "<b>4 Agustus 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/cantik-sukma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Di awal bulan Agustus, sepertinya mama kesel banget sama ayah. Kalau dari pov ayah, ayah cuma pengen ngasih support mama untuk gojek/gocar dari stasiun ke kosan. Karena waktu itu, mama sedang perjalanan menuju Jogja. Tapi, paginya tiba-tiba mama marah dong karena ayah kirim gopay ke mama. Ayah juga bingung, ayah salah ya kalau tf ke mama? Padahal niatnya baik lho, untuk transportasi dan mengurangi pengeluaran mama. Kayanya mama terbiasa mandiri, kasian banget ya sampai gak mau menerima pemberian orang. Yasudah, kalau dilihat dari sudut pandang lain, kayanya ayah juga salah kali ya. Kenapa tiba tiba ngirim gopay/mungkin mama ngerasa direndahkan atau apalah. Yasudah, ayah minta maaf. Sempet diperburuk juga kalau mama pengen menyudahi hubungan bersama ayah. Ayah cuma bisa minta maaf. Padahal beberapa harinya, ayah ulang tahun. Yah, jadi core memories nih, kalau ultah pertama ayah bersama mama ada gejolak itu",
+        mainText: "<i>Di awal bulan Agustus, sepertinya mama kesel banget sama ayah. Kalau dari pov ayah, ayah cuma pengen ngasih support mama untuk gojek/gocar dari stasiun ke kosan. Karena waktu itu, mama sedang perjalanan menuju Jogja. Tapi, paginya tiba-tiba mama marah dong karena ayah kirim gopay ke mama. Ayah juga bingung, ayah salah ya kalau tf ke mama? Padahal niatnya baik lho, untuk transportasi dan mengurangi pengeluaran mama. Kayanya mama terbiasa mandiri, kasian banget ya sampai gak mau menerima pemberian orang. Yasudah, kalau dilihat dari sudut pandang lain, kayanya ayah juga salah kali ya. Kenapa tiba tiba ngirim gopay/mungkin mama ngerasa direndahkan atau apalah. Yasudah, ayah minta maaf. Sempet diperburuk juga kalau mama pengen menyudahi hubungan bersama ayah. Ayah cuma bisa minta maaf. Padahal beberapa harinya, ayah ulang tahun. Yah, jadi core memories nih, kalau ultah pertama ayah bersama mama ada gejolak itu</i> - Fasma",
         mainDate: "<b>6 Agustus 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/ultah-fasma-gift.jpeg",
         pageType: ""
       },
       {
-        mainText: "Ayah suka hadiah dari mama. Walau cuma lukisan, jujur, ayah baru merasakan dikasih hadiah oleh seseorang. Ayah belum pernah merasakan rasanya kado dari seseorang. Iya bener ayah punya keluarga, ada nenek, dan tante. Cuma mereka masih belum bisa memberikan kado karena strugglenya masing-masing. Di hari itu juga, ayah capek akan pressure kerjaan dan mama yang masih ngambek karena gopay. Ayah nangis, maafin ayah ya, ternyata ayah gak sekuat ayah-ayah lainnya.",
+        mainText: "<i>Ayah suka hadiah dari mama. Walau cuma lukisan, jujur, ayah baru merasakan dikasih hadiah oleh seseorang. Ayah belum pernah merasakan rasanya kado dari seseorang. Iya bener ayah punya keluarga, ada nenek, dan tante. Cuma mereka masih belum bisa memberikan kado karena strugglenya masing-masing. Di hari itu juga, ayah capek akan pressure kerjaan dan mama yang masih ngambek karena gopay. Ayah nangis, maafin ayah ya, ternyata ayah gak sekuat ayah-ayah lainnya</i> - Fasma",
         mainDate: "<b>6 Agustus 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/ultah-fasma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Suatu hari, mama overthinking. Mama coba menggali informasi dari ayah. Ayah coba tegar dengan setiap pertanyaannya. Intinya, mama mencecar banyak pertanyaan kalau ayah stalking mama terus. Bahkan sempat menuduh ayah stalking sampai level hacking hpnya. Well, padahal ya, padahal, memang ayah ahli IT. Tapi gak mungkin juga sampai bisa level hacking itu. Kalau get contact, ayah memang sering stalking ini wkwkwk. Tuduh aja terus mama, ayah bisa wingchun",
+        mainText: "<i>Suatu hari, mama overthinking. Mama coba menggali informasi dari ayah. Ayah coba tegar dengan setiap pertanyaannya. Intinya, mama mencecar banyak pertanyaan kalau ayah stalking mama terus. Bahkan sempat menuduh ayah stalking sampai level hacking hpnya. Well, padahal ya, padahal, memang ayah ahli IT. Tapi gak mungkin juga sampai bisa level hacking itu. Kalau get contact, ayah memang sering stalking ini wkwkwk. Tuduh aja terus mama, ayah bisa wingchun</i> - Fasma",
         mainDate: "<b>21 Agustus 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/stalker-fasma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Dieng",
+        mainText: "<i>Ini salah satu momen yang mana ayah pengen ngajak mama buat ke Dieng. Lihat culture festival, sama konsernya Payung Teduh. Namun mama belum mau diajak, yasudah gak papa, ini ayah bawain oleh-oleh foto aja. Suasananya kaya film Disney Rapunzel yang seribu lampion itu, cantik banget</i> - Fasma",
         mainDate: "<b>24 Agustus 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/dcf-sukma.jpeg",
         pageType: ""
       },
       {
-        mainText: "Dieng",
+        mainText: "<i>Sepulang dari Dieng, ayah sempetin ketemuan sama mama di Tugu. Ternyata mama bawain dimsum, itu dimsum enak banget. Terus dikasih gantungan Ponyo juga. Gantungan itu ayah gantungin di tas kerja ayah. Selain itu, ayah juga ngenalin mama sama tante. Mereka itu seumuran lho, sama-sama di semester yang sama lhoo</i> - Fasma",
         mainDate: "<b>25 Agustus 2024</b>",
         mainContext: "resources/img/ponyo-gift.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "Ujung Kulon",
+        mainText: "<i>Gantungan ponyo tadi juga ayah bawa kemana-mana. Apalagi waktu ada event freediving. Ayah pasti bawa dan fotoin, karena rasanya kaya ada aura mama yang ikut kalau bawa gantungan ini. Ini ayah bawa waktu ke Ujung Kulon Banten</i> - Fasma",
         mainDate: "<b>31 Agustus 2024</b>",
         mainContext: "resources/img/ujung-kulon-ponyo.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Wkwkwkwk ini sticker yang mama buat karena mama ngelihat foto ayah waktu di basecamp Selo Merbabu. Kata mama, mama kaget karena ayah cantik banget dan gak ada aura cowoknya. Sekarang stickernya ayah favoritin di sticker WA. Biar kalau mama kesel atau pas ayah kangen bisa kirim sticker itu, supaya mama makin kesel atau ilfil Wkwkwkwkwkwk</i> - Fasma",
         mainDate: "<b>2 September 2024</b>",
         mainContext: "resources/img/hy-maniez.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Ini anak siapa ya yang nyasar? Lucu banget gak sih pakai baju Yupi pizza gitu wkwkwk Oiya! Mama kan emang pinter ya dasarnya. Dari pabrikannya emang udah produk unggulan lah. Nah mama kamu itu kuliah pakai biaya sendiri lho! Mama itu awardee Beasiswa Pendidikan Indonesia cui... Kurang lengkap apa coba mama kamu. Pinter iya, jenius iya, mandiri iya, apa coba yang kurang? Manusya planet mana yang gak bersyukur bisa dapatin hati mama kamu 💕</i> - Fasma",
         mainDate: "<b>7 September 2024</b>",
         mainContext: "resources/img/yupi-sukma.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>INI MOMEN SECOND DATE AYAH SAMA MAMA WKWKWKWKWK AYAH GAK PAHAM GIMANA CARA FOTO KALAU BERDUA GINI WKWKWKWK</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-museum.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Tapi kalau motoin orang atau candid, ayah jago. Keren gak foto mama, style vintage gitu. Pakai vintage, mama tetep cantik ya. Cantik banget sih mama 💕, tapi ini kelihatan kaya orang yang cuma mendel aja wkwkwk</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-sukma-museum.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Kalau ini candid mama lagi lihatin barang-barang museum. Mama tu hebat lho, apal sejarah-sejarahnya Jogja. Pokoknya waktu museum date ini, ayah cuma bisa plonga-plongo sambil lihatin mama yang baca deskripsinya. Lihat tu, wajah mama kalau lagi serius kaya gitu. Seriusnya mama lucu ya. Tembem gimana gitu wkwkwk Sekali lagi, mama kamu cantik ya 💕</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-sukma-museum-2.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Aaaaa Pizza Date 💕💕💕 Ayah ajak mama kesini karena keinget sama yupi pizza yang dipakai mama. Waktu itu antrinya agak lama. Ayah sama mama ngobrolin hal random, dari enaknya pemilik cafenya, kucing yang gak jadi beol, ada taruna halo dek dan random lah. Terus tiba-tiba ada kucing ini. Yang ayah inget dari kucing ini, dia kaya jerapan yang lehernya panjang karena cuma pengen minum dari vas bunga di meja mama. Terus habis gitu, langsung nempel ke mama. Yah, ayah iri sama kucingnya</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-sukma-kucing.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Seperti yang ayah bilang, ayah keinget sama yupi pizza. Jadi, ayah bawain yupi pizza supaya mama bisa foto yupi pizza dan pizza buatan mama yang beneran wkwkwkwk</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-pizza-sukma.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Kesimpulannya adalah percaya deh, percaya aja kalau mama yang pegang dapur pas masak. Gilaa, waktu foto ini, ayah dredegnya minta ampun. Soalnya disuruh buat lebih nempel sama yang fotoin. Nempel paling deket ini. Ayah gak bakal capek buat ngasih tau. Kalau mama itu cantiikkk banget 💕💕💕</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-pizza.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Setelah pizza date, ayah ajak mama ke pantai sambil nyari sunset. Panas banget cui. Btw, ingat ya, ini adegan berbahaya dan perlu dilakukan oleh professional. Jangan sekali-kali main hp saat berkendara ya! Ayah sayang kalian 💕</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-motoran.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Ini ketika sudah sampai Pantai Baru, tapi plang masuknya kelihatan lama wkwkwk. Ayah curi-curi foto mama dari belakang. Ini foto yang ngebuat ayah berpikir, mama itu punya impian yang seluas laut lho. Bisa gak ya ayah nemanin mama sampai mama berhasil?</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-langit-dan-laut.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Yah mama noleh, ketahuan deh kalau lagi motoin mama. Mama cantik ya dengan latar sunset dan lautnya 💕💕💕</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-sukma.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Maaf ya, waktu ini ayah ngebuat mama nangis. Ayah cuma mau kejelasan hubungan, tapi mama masih ada keraguan untuk sebuah komitmen. Ayah ditanyain tante karena tante sudah dapat signal dari pacarnya tante. Kebetulan tante itu adiknya ayah, ayah agak bingung juga waktu itu. Tapi gak papa, ayah bahagia banget, mama berani ungkapin hal-hal yang ayah belum tau. Ayah jadi tau pov mama. Ayah jadi tau seberapa beratnya pundak mama. Ayah cuma bisa bantu nenangin mama, ngasih afirmasi, dan jurus pamungkas sholat Magrib dulu</i> - Fasma",
         mainDate: "<b>15 September 2024</b>",
         mainContext: "resources/img/second-date-nangis.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
 
       {
-        mainText: "",
+        mainText: "<i>Sama seperti email sebelumnya. Ayah sudah dapat sedikit pola dari mama. Setiap ngedate, setelah itu pasti mama ngambek, kesel, marah, dan push away. Tapi kali ini mama deact IG. Yaudah, sama seperti sebelumnya, afirmasi positif, semangatin, minta maaf, dan ngasih space mama untuk recoverynya. Kamu keren sayang 💕💕💕</i> - Fasma",
         mainDate: "<b>19 September 2024</b>",
         mainContext: "resources/img/email-second-date.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Selagi mama recovery dan spacing relationship ayah. Ini juga kali pertama ayah spacing dengan mama. Nyesek banget  soalnya ayah itu tipikal yang kangenan, jadi hampir tiap hari ayah chat IG nya sambil hitungin berapa hari mama deact. Tapi ya dont break the space rule. Jadi, ayah kerja dulu ke kantor Singapore sekalian jalan-jalan ke Johor dan KL. Intinya focus on my self dulu dari masing-masing</i> - Fasma",
         mainDate: "<b>20 September 2024</b>",
         mainContext: "resources/img/singapore.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Suatu malam, waktu ayah masih di Malaysia. Mama tiba-tiba balik dan bilang kaya gini. Apa gak takut lihat mama ngetik beginian? Panik dong ayah, karena gak mau kalah, ayah balas dengan screenshot chat juga dan juga nyairin suasana wkwkwk Dari momen ini juga, ayah mulai paham kepribadian mama. Tapi ayah masih gagap menghadapi ini karena masih belum terbiasa aja</i> - Fasma",
         mainDate: "<b>27 September 2024</b>",
         mainContext: "resources/img/avoidant-sukma.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Ini tante kamu, disini ayah mau bahas terkait keseriusan pacarnya tante. Ayah ajak sambil mendaki bukit sambil lihat sunset dan stargazing. Dari sini, ayah dan tante sudah bertukar keluh kesah dan mengerti satu sama lain. Ayah gak mau ngepush mama dan tante gak masalah kalau ngelangkahin ayah. Pesan ayah kepada tante waktu itu, 'sesulit apapun dampingi dia (pacarnya)'</i> - Fasma",
         mainDate: "<b>28 September 2024</b>",
         mainContext: "resources/img/tante-safa-1.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Seperti biasa, ayah coba yakinin mama lagi. Ngasih afirmasi, semangatin dan minta maaf. Lalu mama balas via google docs. Tanpa banyak pikir, ya ayah langsung baca dan jawab di docs tersebut. Lucunya, ini ayah tulis waktu di kereta yang menuju ITB untuk ujian S2 disana</i> - Fasma",
         mainDate: "<b>11 Oktober 2024</b>",
         mainContext: "resources/img/stop-hubungan.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Sampai di ITB, coba fokus dulu dan sambil jepret-jepret tiap sudutnya. Ternyata adem ya ITB itu</i> - Fasma",
         mainDate: "<b>11 Oktober 2024</b>",
         mainContext: "resources/img/itb.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "Ke Al-Jabbar lagi tapi sudah pulih sepenuhnya tapi mama ngambek",
+        mainText: "Sebelum pulang ke Jakarta. Ayah mampir ke Al-Jabbar lagi untuk menenangkan hati dan jiwa. Walau dengan gejolak pikiran, tetap ingat akan Allah ya. Setelah dari Al-Jabbar, ayah langsung pulang ke Jakarta buat lanjut tes di Bappennas. Mama masih ngambek disini",
         mainDate: "<b>11 Oktober 2024</b>",
         nextButton: "Email dong wkwkwkwk",
         mainContext: "resources/img/al-jabbar.jpeg",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Ini momen dimana ayah belajar psikologis manusia. Bagaimana melakukan pendekatan terhadap jiwa-jiwa manusya yang beraneka ragam. Ini salah satu tulisan ayah, unek-unek yang ada saat itu. Inti tulisannya, ayah bahagia ketika mama bisa ngungkapin isi hati dan pikirannya</i> - Fasma",
         mainDate: "<b>12 Oktober 2024</b>",
         mainContext: "resources/img/psikolog.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Bonus nonton konser Lomba Sihir. Gak lupa ayah videoin supaya mama tau gimana rasanya konser bareng anak-anak gen z. Biar mama gak ngambek juga. Pokoknya capek banget hari itu</i> - Fasma",
         mainDate: "<b>12 Oktober 2024</b>",
         mainContext: "resources/img/lomba-sihir.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
-        mainDate: "<b>19 Oktober 2024</b>",
-        mainContext: "resources/img/tante-safa-2.jpeg",
-        nextButton: "",
-        pageType: ""
-      },
-      {
-        mainText: "",
+        mainText: "<i>Sekiranya udah ngerasa pulih, ayah ajak mama lagi buat ngedate lagi. Diawali dengan Soto Daging rekomendasi mama dan dibayarin sama mama xixixi. Sotonya enak, pokoknya percaya seleranya mama. Terus lanjut ke Ledok Sambi, duduk di pinggir sungai. Sambil curhat, nanya kehidupan, dan banyak lagi. Kebetulan suasanya pagi dan airnya dingin, jadi relax banget. Oiya, ini momen pertama kali ayah dan mama bengong gak ngomong selama 10 menitan. Terus ucapan pertama ayah setelah bengong itu cuma 'Ayah sayang mama'. Wkwkwkwk ayah pertama kali bilang sayang ke mama 💕💕💕</i> - Fasma",
         mainDate: "<b>26 Oktober 2024</b>",
         mainContext: "resources/img/third-ledok-sambi.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Setelah dari Ledok Sambi, ayah ajak ke tempat creative space gitu. Lukis pot, ya walau kata mama alatnya kurang proper. Tapi gak papa, yang penting kan kebersamaan dan bonding yang terjalin disitu. Ayah seneng lihat mama bisa meluapkan unek-unek sambil ngelukis. Kaya ini lho mama kamu kalau lagi curhat dan fokus sama passionnya. Mama cantik ya 💕</i> - Fasma",
         mainDate: "<b>26 Oktober 2024</b>",
         mainContext: "resources/img/third-date-lukis.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Hahahaha makan gacoan. Menu andalan mama, Mie Gacoan lv 1 sambel pisah ditambah udang keju dan rambutan. Akhirnya ayah bisa motoin mama waktu makan dari depan. Sekali lagi, mama cantik banget kalau lagi ngempet nahan lapar ya. Mama cantik banget 💕💕💕</i> - Fasma",
         mainDate: "<b>26 Oktober 2024</b>",
         mainContext: "resources/img/third-date-gacoan.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "",
+        mainText: "<i>Seperti biasa, after date, mama butuh spacing lagi. Butuh recovery buat aktivitas lagi. Ayah udah mulai paham dan mesti fokus sama diri sendiri aja dulu. Saat ini, ayah isi buat naik ke gunung Prau. Gak lupa dong, ayah fotoin mama dengan background gunungnya. Ini itu gunung yang sama dengan background kemasan Aqua</i> - Fasma",
         mainDate: "<b>17 November 2024</b>",
         mainContext: "resources/img/prau.jpeg",
-        nextButton: "",
+        nextButton: "Next",
         pageType: ""
       },
       {
-        mainText: "Ayah tau ini diary yang gak mewah. Sederhana bagi ayah, tapi ayah suka dengan hal ini. Ayah juga tau kalau semua itu mungkin delusi semata. Mengandai-andai ayah dan mama kamu kelak memiliki keluarga yang dibangun bersama. Berandai memiliki anak seperti kalian. Bahkan sekedar panggilan ayah dan mama, bisa jadi ayah dipanggil orang gila karena delusi yang sudah menjadi halusinasi. Semoga semua baik baik saja ya. Semoga semua halusinasi ini perlahan terwujud bersama mama kamu. Sekarang, mama kamu masih belum bisa menerima ayah atau bahkan diri mama sendiri. Ayah cuma mau mendampingi mama sampai mama bisa menemukan diri mama sendiri. Banyak badai yang bakal dihadapi, ayah percaya itu. Doakan ayah untuk mampu menghadapinya ya, ayah sayang mama dan kalian.",
+        mainText: "Mas tau ini diary yang gak mewah. Sederhana bagi mas, tapi mas suka dengan hal ini. Mas juga tau kalau semua itu mungkin delusi semata. Mengandai-andai mas dan cah ayu kelak memiliki keluarga yang dibangun bersama. Berandai memiliki anak seperti keluarga cemara. Bahkan sekedar panggilan ayah dan mama, bisa jadi mas dipanggil orang gila karena delusi yang sudah menjadi halusinasi. Semoga semua baik baik saja ya. Semoga semua halusinasi ini perlahan terwujud bersama cah ayu. Sekarang, mas cuma mau mendampingi cah ayu sampai cah ayu bisa menemukan diri sendiri. Banyak badai yang bakal dihadapi, mas percaya itu. Doakan mas untuk mampu menghadapinya ya, mas sayang cah ayu 💕",
         mainDate: "<b>Sekarang</b>",
         nextButton: "Semangat!!",
         mainContext: "resources/img/delusi.png",
@@ -485,7 +485,7 @@
       idxPage += 1;
       if (idxPage >= pageContents.length) {
         // End of the game
-        alert("Untuk Sukma Dyah Aini, kamu pantas untuk mendapatkan cinta sebesar dunia dan seisinya. I was enchanted to you 💕");
+        alert("Untuk Sukma Dyah Aini, kamu pantas untuk mendapatkan cinta sebesar dunia dan seisinya 💕");
         return;
       }
 
@@ -494,7 +494,7 @@
 
       setTimeout(() => {
         const mainContentImg = document.getElementById("mainContent");
-        
+
         changeImageAndWaitForLoad(
           mainContentImg,
           pageContents[idxPage].mainContext,
@@ -503,7 +503,7 @@
             document.getElementById("mainText").innerHTML = pageContents[idxPage].mainText;
             document.getElementById("yesButton").textContent = pageContents[idxPage].nextButton;
             document.getElementById("mainDate").innerHTML = pageContents[idxPage].mainDate;
-    
+
             document.getElementById("mainContainer").classList.add("visible");
           }
         );
