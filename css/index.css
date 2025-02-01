@@ -86,3 +86,8 @@ img {
   opacity: 1;
   transform: translateX(0);
 }
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust spacing between buttons */
+}
